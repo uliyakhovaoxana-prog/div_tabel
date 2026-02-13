@@ -1,0 +1,150 @@
+body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    gap: 12px;
+    width: 720px;
+}
+
+/* Сайдбар */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 50px;
+}
+
+.side-item {
+    background-color: #4d4d4d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 20px;
+}
+
+.platform { height: 110px; }
+.app { height: 142px; background-color: #333; }
+.services { flex-grow: 1; }
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+/* Заголовки */
+.header-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.header-box {
+    background-color: #4d4d4d;
+    height: 110px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-text { font-size: 24px; line-height: 1.1; }
+.subtitle-text { font-size: 16px; margin-top: 2px; }
+
+.gray-bar {
+    background-color: #8c8c8c;
+    height: 65px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+/* Оранжевая полоса без тени */
+.orange-bar {
+    background-color: #f18500;
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Колонки - СУЖЕНЫ (width: 80%) */
+.columns-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.gray-column {
+    background-color: #7f7f7f;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.orange-card {
+    background-color: #ff8b00;
+    color: white;
+    width: 90%; /* Блоки сужены относительно серой подложки */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shadow-effect {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.top-card { 
+    height: 70px; 
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+.bottom-card { height: 125px; }
+
+.card-title { font-weight: bold; font-size: 21px; margin-bottom: 5px; }
+.card-list { font-size: 18px; line-height: 1.3; }
+
+.column-caption {
+    color: white;
+    font-size: 25px;
+}
+
+/* Футер - Шрифт соцсетей БОЛЬШЕ */
+.footer-dark {
+    background-color: #333;
+    height: 85px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer-title { font-weight: bold; font-size: 18px; }
+
+.footer-list { 
+    font-size: 18px; /* Увеличенный шрифт для Facebook, SAP, Twitter */
+    opacity: 1;
+}
